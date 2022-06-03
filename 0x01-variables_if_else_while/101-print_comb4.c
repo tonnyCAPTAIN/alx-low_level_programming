@@ -8,11 +8,11 @@ int main(void)
 {
 	int s, b, t;
 
-	for (s = 0; s <= 10; s++)
+	for (s = 11; s <= 21; s++)
 	{
-		for (b = 0; b <= 10; b++)
+		for (b = 11; b <= 21; b++)
 		{
-			for (t = 0; t <= 10; t++)
+			for (t = 11; t <= 21; t++)
 			{
 				if (t > b && b > s)
 				{
@@ -20,7 +20,7 @@ int main(void)
 					putchar(b);
 					putchar(t);
 
-					if (s == 8 && b == 9 && t == 10)
+					if (s == 19 && b == 20 && t == 21)
 					{
 						break;
 					}
