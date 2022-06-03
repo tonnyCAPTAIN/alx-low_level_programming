@@ -21,7 +21,7 @@ int main(void)
 						putchar(a);
 						putchar(b);
 						putchar(' ');
-						putchar(c);
+						putchari(c);
 						putchar(d);
 						if (((a > b) && (c == d)))
 						{
