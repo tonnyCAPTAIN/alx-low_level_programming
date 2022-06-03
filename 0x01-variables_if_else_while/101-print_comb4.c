@@ -8,30 +8,21 @@ int main(void)
 {
 	int s, b, t;
 
-	for (s = 0; s <= 9; s++)
+	for (s = 48; s <= 57; s++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (b = 48; b <= 57; b++)
 		{
-			for (t = 0; t <= 9; t++)
+			for (t = 48; t <= 57; t++)
 			{
-				putchar(s + '0');
-				putchar(b + '0');
-				putchar(t + '0');
 
-				if (s < 8)
-				{
-					 putchar(','); 
-					 putchar(' '); 
-				}
-
-			        /*if (t > b && b > s)
+			        if (t > b && b > s)
 
 				{
 					putchar(s);
 					putchar(b);
 					putchar(t);
 
-					if (s == 19 && b == 20 && t == 21)
+					if (s == 55 && b == 56 && t == 57)
 					{
 						break;
 					}
@@ -40,7 +31,7 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-				}*/
+				}
 			}
 		}
 	}
