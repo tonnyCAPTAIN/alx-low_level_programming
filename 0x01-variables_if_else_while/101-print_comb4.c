@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all posibles numbers from three digits
- * 
+ *
  * Return: always 0 (success)
  */
 int main(void)
@@ -14,9 +14,7 @@ int main(void)
 		{
 			for (t = 48; t <= 57; t++)
 			{
-
-			        if (t > b && b > s)
-
+				if (t > b && b > s)
 				{
 					putchar(s);
 					putchar(b);
