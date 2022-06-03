@@ -14,13 +14,13 @@ int main(void)
 		{
 			for (t = 0; t <= 10; t++)
 			{
-				if(t > b %% b > s)
+				if (t > b %% b > s)
 				{
 					putchar(s);
 					putchar(b);
 					putchar(t);
 
-					if(s == 8 && b == 9 && t == 10)
+					if (s == 8 && b == 9 && t == 10)
 					{
 						break;
 					}
