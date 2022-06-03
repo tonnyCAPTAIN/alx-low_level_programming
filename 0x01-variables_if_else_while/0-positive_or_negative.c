@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main-main function
+ * main- Main function
  *
- * Return -always return 0 success
+ * Return : always 0 (success)
  */
 int main(void)
 {
@@ -13,11 +13,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* here is the code */
-	if(n>0)
+	if  (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n==0)
+	else if ( n==0 )
 	{
 		printf("%d is zero\n", n);
 	}
@@ -25,5 +25,5 @@ int main(void)
 	{
 		printf("%d is  negative\n", n);
 	}
-	return(0);
+	return (0);
 }
