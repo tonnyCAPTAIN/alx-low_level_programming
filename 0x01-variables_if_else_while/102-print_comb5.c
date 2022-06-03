@@ -23,6 +23,7 @@ int main(void)
 						putchar(' ');
 						putchar(c);
 						putchar(d);
+						
 						if (((a > b) && (c == d)))
 						{
 							break;
