@@ -1,20 +1,31 @@
 #include <stdio.h>
 /**
- * main - prints all posibles numbers from three digits 
- *
+ * main - prints all posibles numbers from three digits
+ * 
  * Return: always 0 (success)
  */
 int main(void)
 {
 	int s, b, t;
 
-	for (s = 11; s <= 21; s++)
+	for (s = 0; s <= 9; s++)
 	{
-		for (b = 11; b <= 21; b++)
+		for (b = 0; b <= 9; b++)
 		{
-			for (t = 11; t <= 21; t++)
+			for (t = 0; t <= 9; t++)
 			{
-				if (t > b && b > s)
+				putchar(s + '0');
+				putchar(b + '0');
+				putchar(t + '0');
+
+				if (s < 8)
+				{
+					 putchar(','); 
+					 putchar(' '); 
+				}
+
+			        /*if (t > b && b > s)
+
 				{
 					putchar(s);
 					putchar(b);
@@ -29,7 +40,7 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-				}
+				}*/
 			}
 		}
 	}
