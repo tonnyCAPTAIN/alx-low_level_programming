@@ -7,7 +7,6 @@
 int main(void)
 {
 	int a, b, c, d = 48;
-	
 	while ((a + b) != (c + d))
 	{
 		for (a = 48; a < 58; a++)
@@ -23,7 +22,6 @@ int main(void)
 						putchar(' ');
 						putchar(c);
 						putchar(d);
-						
 						if (((a > b) && (c == d)))
 						{
 							break;
