@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * main - Prints lowercase alphabets 10 times
  *
  * Returns: always 0
