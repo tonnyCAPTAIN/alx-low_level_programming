@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * print-sign -prints the sign of a number.
  * @n: character in ASCII code
  *
