@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _isalpha - checks for upper case alphabets
  * @c: The character in ASCII code
  *
