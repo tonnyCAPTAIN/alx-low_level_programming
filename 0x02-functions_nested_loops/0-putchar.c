@@ -1,21 +1,21 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * main - Prints _putchar
  *
- * Return: always 0 (success)
+ * Return: 0
  */
 
 int main(void)
 {
-	int str[] = {95, 112, 117, 116, 99, 104, 97, 114}
-	int count, size;
+	char word[8] = "_putchar";
+	int i;
 
-	size = sizeof(str) / sizeof(int);
-	for (count = 0; count < size; count++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(str[count]);
+		_putchar(word[i]);
 	}
-
 	_putchar('\n');
+
 	return (0);
 }
