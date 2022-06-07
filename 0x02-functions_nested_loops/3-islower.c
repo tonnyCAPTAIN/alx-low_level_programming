@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * main - checks for lower case alphabets
  * @c: The character in ASCII code
  *
