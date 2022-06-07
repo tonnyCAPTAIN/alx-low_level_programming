@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * main - checks for upper case alphabets
+ * _isalpha - checks for upper case alphabets
  * @c: The character in ASCII code
  *
  * Return: 1 for upper 0 for none
