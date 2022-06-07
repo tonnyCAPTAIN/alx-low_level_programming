@@ -4,13 +4,16 @@
  *
  * Return: void
  */
-void alphabet(void)
+void print_alphabet(void)
 {
-	int i;
+	int a = 97;
 
-	for (i = 97; i < 123; i++)
+	while (a < 123)
 	{
-		_putchar(i);
+		_putchar(a);
+		a++;
+		if (a == 123)
+			break;
 	}
 	_putchar('\n');
 }
