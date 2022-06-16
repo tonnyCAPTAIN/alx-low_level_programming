@@ -1,42 +1,42 @@
 #include "main.h"
 /**
- * cap_string - reverses a string
- * @str: Input
+ * cap_string - capitalize word
+ * @str: pointer
  *
  * Return: Returns answer
  */
 
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
-	int i;
+	char sep[] = ",\t;\n; .!?\"(){}";
+	int flag, i, ii;
 
-	i = 0;
-	if (n[0] >= 'a' && n[0] <= 'z')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		n[0] = n[0] - 32;
-	}
-	for (i = 0; n[i] != '\0'; i++)
-	{
-		switch (n[i])
+		flag = 0;
+
+		if (i == 0)
 		{
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-			case ' ':
-			case '\n':
-			case '\t':
-				if (n[i + 1] > 96 && n[i + 1] < 123)
+			flag = 1;
+		}
+		else
+		{
+			for (ii = 0; sep[ii] != '\0'; ii++)
+			{
+				if (str[i - 1] == sep[ii])
 				{
-					n[i + 1] = n[i + 1] - 32;
+					flag = 1;
+					break;
 				}
+			}
+		}
+		if (flag == 1)
+		{
+			if (str[i] <= 'z' && str[i] >= 'a')
+			{
+				str[i] -= ('a' - 'A');
+			}
 		}
 	}
-	return (n);
+	return (str);
 }
