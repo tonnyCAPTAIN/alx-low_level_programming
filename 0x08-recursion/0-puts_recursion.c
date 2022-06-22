@@ -4,7 +4,6 @@
  * @s: pointer to a string
  * Return: noting
  */
-
 void _puts_recursion(char *s)
 {
 	if (*s != '\0')
