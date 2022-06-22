@@ -1,7 +1,8 @@
 #include "main.h"
 /*
- * _puts_recursion - copies a string
- * @s: INput
+ * _puts_recursion - copies a string then new line
+ * @s: pointer to a string
+ * Return: noting
  */
 
 void _puts_recursion(char *s)
