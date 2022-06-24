@@ -1,0 +1,4 @@
+#!/bin/bash
+ar rc mylib.a main.h
+
+
