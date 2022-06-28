@@ -22,7 +22,8 @@ char *argstostr(int ac, char **av)
 		for (j = 0; av[i][j] != '\0'; j++)
 			size++;
 		size++;
-	}size++;
+	}
+	size++;
 
 	/* allocate memory for total number of chars */
 
