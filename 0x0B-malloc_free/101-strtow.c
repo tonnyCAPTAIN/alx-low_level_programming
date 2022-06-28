@@ -30,6 +30,7 @@ int strncat_mod(char *dest, char *src, int i, int str_len)
 void mallocmem(char **newstr, char *str, int str_len)
 {
 	int i = 0, j = 0, word_len = 1;
+
 	while (i < str_len)
 	{
 		if (str[i] != ' ')
