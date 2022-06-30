@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * *malloc_checked - Prints the number of argumnets
+ * *malloc_checked - allocates memory
  * @b: argument count
- * Return: return 0
+ * Return: return 98
  */
 
 void *malloc_checked(unsigned int b)
