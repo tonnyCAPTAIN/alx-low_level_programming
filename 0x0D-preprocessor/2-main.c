@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints the program compilation file with new line
- *  Return - 0 success
+ *  Return - init
  */
 
 int main(void)
