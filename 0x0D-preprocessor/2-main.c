@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *  main - Prints the program name
+ * main -Prints the program name
  *  Return - 0 success
  */
 int main(void)
