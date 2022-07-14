@@ -10,65 +10,45 @@
 
 int _strlen(const char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i]; i++)
-		;
+	while (s[i] != '\0')
+		i++;
+
 	return (i);
 }
 
 /**
- * _strdup - recreation of string duplicate function
- * @src: source of string to duplicate
- * Return: pointer to malloc'd space with copied string
- */
-
-void *_strdup(const char *src)
-{
-	int len, i;
-	char *dest;
-
-	len = _strlen(src);
-	dest = malloc((len + 1) * sizeof(char));
-	if (dest == NULL)
-		return (NULL);
-	for (i = 0; src[i]; i++)
-		dest[i] = src[i];
-	dest[i] = '\0';
-	return (dest);
-}
-
-/**
- * *add_node_end - add new nodes to the end of the list
- * @head: current place in the list
- * @str: string to add to the head
- * Return: pointer to current position in list
+ * add_node_end - adds a new node at the end of a list_t list
+ * @head: head of the list
+ * @str: string to add to list
+ * Return: address of new element, or NULL if failed
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *current;
-	char *dupstr;
+	list_t *new;
+	list_t *temp;
+	int length = _strlen(str);
 
-	if (str == NULL)
-		return (NULL);
-	dupstr = _strdup(str);
-	if (dupstr == NULL)
-		return (NULL);
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	new->str = dupstr;
-	new->len = _strlen(str);
+	new->str = strdup(str);
+	new->len = length;
 	new->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = new;
-		return (*head);
+		return (new);
 	}
-	current = *head;
-	while (current->next != NULL)
-		current = current->next;
-	current->next = new;
-	return (*head);
+	else
+	{
+		temp = *head;
+		while (temp->next != NULL)
+			temp = temp->next;
+		temp->next = new;
+	}
+	return (new);
 }
