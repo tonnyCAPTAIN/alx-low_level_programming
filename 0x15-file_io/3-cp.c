@@ -48,7 +48,7 @@ void cp(char *file_from, char *file_to)
 		close(fd_read);
 		_error(99, file_to);
 	}
-	do{
+	do {
 		res_read = read(fd_read, buf, 1024);
 		if (res_read < 0)
 			_error(98, file_from);
